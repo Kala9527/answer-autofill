@@ -1,0 +1,25 @@
+{
+  "model": {
+    "base_url": "http://127.0.0.1:8008/v1",
+    "api_key": "test",
+    "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "temperature": 0.2,
+    "max_tokens": 1200,
+    "timeout_seconds": 300,
+    "retries": 2
+  },
+  "excel": {
+    "header_row": 1,
+    "answer_row": 2,
+    "basic_info_cols": ["G", "H", "I", "K", "M", "W", "AH", "AO"],
+    "question_group_start_col": "AS",
+    "question_group_size": 5,
+    "occupation_col": "K"
+  },
+  "processing": {
+    "output_dir_name": "answer_autofill_output",
+    "recursive": false,
+    "skip_output_folders": true,
+    "concurrency": 8
+  }
+}

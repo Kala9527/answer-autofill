@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+env/
+ENV/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# Local logs and runtime files
+logs/
+*.log
+test.txt
+
+# Excel inputs / generated outputs
+*.xlsx
+*.xlsm
+~$*
+answer_autofill_output/
+excle_deal/**/*.xlsx
+excle_deal/**/*.xlsm
+
+# Local secrets
+.env
+.env.*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
