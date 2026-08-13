@@ -1,74 +1,53 @@
-﻿# Answer Autofill
+# Answer Autofill
 
 [中文说明](./README.cn.md)
 
-> Local LLM-powered Excel questionnaire answer auto-completion tool with batch processing, dry-run scanning, and safe output files.  
+> Batch-fill spreadsheet survey answers with an OpenAI-compatible local model while preserving source files.
 
-This repository is packaged to be easy to **star, fork, run, remix, and contribute to**. It keeps a dedicated English version for global GitHub discovery, with a separate Chinese version linked above.
+![python](https://img.shields.io/badge/python-111827?style=flat-square) ![excel](https://img.shields.io/badge/excel-111827?style=flat-square) ![llm](https://img.shields.io/badge/llm-111827?style=flat-square) ![automation](https://img.shields.io/badge/automation-111827?style=flat-square) ![local-first](https://img.shields.io/badge/local-first-111827?style=flat-square)
 
-## Why Star This
+## Showcase
 
-- Practical project idea with a clear real-world use case.
-- Small enough to fork, study, and customize quickly.
-- English-first bilingual README for both global and Chinese-speaking developers.
-- Clean setup instructions, project structure, roadmap, and contribution entry points.
-- Built around popular GitHub themes such as AI tools, TypeScript, developer tools, local-first apps, automation, and indie-friendly workflows when relevant.
-
-## What It Does
-
-Local LLM-powered Excel questionnaire answer auto-completion tool with batch processing, dry-run scanning, and safe output files.
+![Answer Autofill showcase](./docs/images/github-showcase.png)
 
 ## Highlights
 
-- Batch scans .xlsx and .xlsm files
-- Writes to output copies instead of changing source spreadsheets
-- Uses surrounding survey context to generate better answers
-- Dry-run and smoke-test modes for safer batch jobs
-- Configurable OpenAI-compatible local model endpoint
-
-## Tech Stack
-
-`	ext
-Python, openpyxl, OpenAI SDK, asyncio, httpx
-`
+- python
+- excel
+- llm
+- automation
+- local first
+- Practical project structure for learning, demos, and remixing.
+- Local-first setup where secrets, generated files, and build output stay out of Git.
 
 ## Quick Start
 
-`ash
-python -m venv .venv`n.venv\\Scripts\\activate`npip install -r requirements.txt`npython -m answer_autofill "D:\\path\\to\\excel_folder" --dry-run
-`
+```bash
+setup_env.bat
+start.bat --dry-run
+```
 
 ## Project Structure
 
-`	ext
+```text
 .
 |-- src/ or app/          Main source code
 |-- public/ or assets/    Static assets when available
-|-- docs/                 Notes, specs, or deployment docs when available
-|-- README.md             English-first bilingual project guide
--- package / project files
-`
-
-## Deployment / Packaging
-
-- Do not commit generated builds, local databases, API keys, private logs, or large media files.
-- For frontend projects, deploy the production dist/ folder to GitHub Pages, Vercel, Netlify, Nginx, or package it with DistDesktopLauncher.
-- For desktop/mobile projects, publish only release artifacts from a clean build environment.
-- Keep configuration examples public and real credentials private.
+|-- docs/                 Screenshots, notes, or deployment docs
+|-- README.md             GitHub landing README
+|-- README.en.md          English documentation
+`-- README.cn.md          Chinese documentation
+```
 
 ## Roadmap
 
-- [ ] More spreadsheet layout presets
-- [ ] GUI wrapper for non-technical users
-- [ ] Result review and approval mode
-- [ ] Provider presets and benchmark examples
+- [ ] Add more real-world examples and screenshots.
+- [ ] Expand tests or smoke checks for the primary workflow.
+- [ ] Publish clean release artifacts where the project type supports it.
+- [ ] Keep documentation friendly for new contributors.
 
 ## Contributing
 
-Issues and pull requests are welcome. Useful contributions include better screenshots, demos, docs, templates, presets, provider guides, compatibility fixes, tests, and translations.
+Issues and pull requests are welcome. Useful contributions include screenshots, demos, docs, templates, presets, compatibility fixes, tests, and translations.
 
 If this project helps you, a star and fork make it easier for more people to discover it.
-
-
-
-
